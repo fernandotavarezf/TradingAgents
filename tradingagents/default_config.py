@@ -13,8 +13,8 @@ DEFAULT_CONFIG = {
     "quick_think_llm": "gpt-4o-mini",
     "backend_url": "https://api.openai.com/v1",
     # Debate and discussion settings
-    "max_debate_rounds": 1,
-    "max_risk_discuss_rounds": 1,
+    "max_debate_rounds": 2,
+    "max_risk_discuss_rounds": 3,
     "max_recur_limit": 100,
     # Tool settings
     "online_tools": True,
