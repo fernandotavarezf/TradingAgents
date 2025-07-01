@@ -1,2 +1,3 @@
 Done:Entender por que no me esta dejando correr hasta el final el modelo, me dio el siguiente error:
 Done:Your organization must be verified to use the model `o4-mini`. Please go to: https://platform.openai.com/settings/organization/general and click on Verify Organization. If you just verified, it can take up to 15 minutes for access to propagate.', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}
+Todo: check how you can save evals_results historically so that you can see all the decision the model has taken.

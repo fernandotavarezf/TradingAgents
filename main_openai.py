@@ -15,7 +15,7 @@ config["online_tools"] = True
 ta = TradingAgentsGraph(debug=True, config=config)
 
 # Tickers to analyze
-tickers = ["NVDA", "AAPL"]
+tickers = ["AMZN"]
 
 # Use today's date for the trade analysis
 today = date.today().isoformat()

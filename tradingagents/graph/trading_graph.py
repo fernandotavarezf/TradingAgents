@@ -231,6 +231,13 @@ class TradingAgentsGraph:
         ) as f:
             json.dump(self.log_states_dict, f, indent=4)
 
+        # Also save individual reports per trade date
+        report_directory = Path(f"evals_report/{self.ticker}/{trade_date}/")
+        report_directory.mkdir(parents=True, exist_ok=True)
+
+        with open(report_directory / "full_states_log.json", "w") as f:
+            json.dump(self.log_states_dict[str(trade_date)], f, indent=4)
+
     def reflect_and_remember(self, returns_losses):
         """Reflect on decisions and update memory based on returns."""
         self.reflector.reflect_bull_researcher(
